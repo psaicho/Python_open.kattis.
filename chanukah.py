@@ -1,13 +1,7 @@
-def c(k):
-    a, b, = 2, 1
-    suma = a
-    for i in range(1, k):
-        a = a + b
-        suma += a
-    return suma
 
 
 
-for i in range(1, int(input()) + 1):
-    X, Y = map(int, input().split())
-    print(f"{X} {c(Y)}")
+for i in range(int(input())):
+    x, y = map(int, input().split())
+    print(x, int((y + 1.5) ** 2 // 2 - 1))
+
