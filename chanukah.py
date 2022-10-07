@@ -7,9 +7,7 @@ def c(k):
     return suma
 
 
-N = []
+
 for i in range(1, int(input()) + 1):
     X, Y = map(int, input().split())
-    N.append([X, c(Y)])
-for j in N:
-    print(f"{j[0]} {j[1]}")
+    print(f"{X} {c(Y)}")
